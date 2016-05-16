@@ -1,0 +1,23 @@
+//
+//GRIDS!
+//
+
+.grid__row
+  font-size: 0
+[class^=grid__col]
+.grid__col
+  @include padding-horizontal($grid__gutter--width)
+  display: inline-block
+  font-size: $font-size--base
+
+.grid__col--quarter
+  width: 25%
+
+$number-of-colums:12
+
+@for $i from 1 through $number-of-colums
+  .grid__col--#{$i}
+    width: (100% / $number-of-colums) * $i
+
+@media (max-width: 375px)
+  @for $i from 1 through 4
