@@ -1,1 +1,2 @@
-Git has super powers!!!! It's amazing.
+# git_exercise
+git pull, push, add, status, branch, commit.
